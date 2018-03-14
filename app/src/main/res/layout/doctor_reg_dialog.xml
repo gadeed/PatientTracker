@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor Registration "
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tvevent"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvevent"
+        android:hint="Doctor Name"
+        android:textColor="#200909"
+        android:inputType="text"
+        android:gravity="center"
+        android:id="@+id/etName"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etName"
+        android:hint="Doctor Specialist"
+        android:textColor="#200909"
+        android:inputType="text"
+        android:gravity="center"
+        android:id="@+id/etSpecialist"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etSpecialist"
+        android:hint="Mobile No"
+        android:textColor="#200909"
+        android:inputType="number"
+        android:gravity="center"
+        android:id="@+id/etPhone"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etPhone"
+        android:hint="Email"
+        android:textColor="#200909"
+        android:inputType="textEmailAddress"
+        android:gravity="center"
+        android:id="@+id/etEmail"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dede3d"
+        android:id="@+id/btnOk"
+        android:layout_below="@+id/etEmail"
+        android:text="Register"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.demo.user1.patient.MedicationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medication"
+        android:textColor="@color/toolbarbackground"
+        android:id="@+id/tvphone"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvphone"
+        android:hint="Patient Number"
+        android:textColor="#200909"
+        android:inputType="text"
+        android:id="@+id/etnumber"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etnumber"
+        android:id="@+id/etmcase"
+        android:hint="Medical Case"
+        android:textColor="#200909"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etmcase"
+        android:id="@+id/etdesc"
+        android:hint="Description"
+        android:textColor="#200909"
+        android:inputType="text"
+        />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/etdesc"
+            android:id="@+id/etnote"
+            android:hint="Note"
+            android:textColor="#200909"
+            android:inputType="text"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/etnote"
+        android:id="@+id/layout_date">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="19dp"
+            android:hint="Date"
+            android:textColor="#200909"
+            android:layout_marginLeft="7dp"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+       android:layout_marginLeft="20dp"
+        android:id="@+id/tvdate"
+        android:textSize="19dp"
+        android:hint="Date"
+        android:textColor="#200909"
+        />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/layout_date"
+            android:id="@+id/layout_doctor">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="19dp"
+                android:hint="Doctor"
+                android:textColor="#200909"
+                android:layout_marginLeft="7dp"
+                />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/layout_date"
+            android:id="@+id/spdoctor"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            />
+        </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/layout_doctor"
+        android:background="@color/toolbarbackground"
+        android:text="save"
+        />
+    </RelativeLayout>
+
+</ScrollView>

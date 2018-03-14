@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    >
+    <TextView
+        android:textSize="1sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:textColor="#0c872f"
+        android:id="@+id/tvDid"/>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/ivdoctor"
+        android:background="@drawable/img_circle"/>
+    <TextView
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:text="Arooska muuse ciise"
+        android:layout_marginTop="12dp"
+        android:textColor="#0c872f"
+        android:id="@+id/tveventname"/>
+
+</LinearLayout>

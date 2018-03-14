@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor Information"
+        android:textColor="@color/toolbarbackground"
+        android:gravity="center"
+        android:id="@+id/p_info"
+        android:textSize="25dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_info"
+        android:orientation="horizontal"
+        android:id="@+id/layout_p_number"
+        android:layout_marginTop="10dp">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor No: "
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_Number"
+                android:text="Number"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Doctor Name: "
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_Name"
+                android:text="Name"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specialization: "
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_special"
+                android:text="Specialization"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+
+        <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email: "
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/d_email"
+            android:text="Email"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"/>
+    </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No: "
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/d_mobile"
+                android:text="Mobule"
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"/>
+        </TableRow>
+        <TableRow
+            android:gravity="start">
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/btDelete"
+                android:textColor="@color/colorAccent"
+                android:background="@android:color/transparent"
+                android:layout_marginLeft="0dp"
+                android:text="Delete"/>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/btCancel"
+                android:background="@android:color/transparent"
+                android:text="cancel"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

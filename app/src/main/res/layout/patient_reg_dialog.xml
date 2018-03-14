@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient Registration "
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/tvphone"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvphone"
+        android:hint="Patient Number"
+        android:textColor="#200909"
+        android:inputType="text"
+        android:gravity="center"
+        android:id="@+id/etNumber"
+        />
+          <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="10dp"
+              android:layout_below="@+id/etNumber"
+                android:hint="Patient Name"
+                android:textColor="#200909"
+                android:inputType="text"
+                android:gravity="center"
+              android:id="@+id/etName"
+            />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutGender"
+        android:orientation="horizontal"
+        android:layout_below="@+id/etName"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="Gender"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spgender"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/layoutGender"
+        android:id="@+id/etage"
+        android:hint="Patient Age"
+        android:textColor="#200909"
+        android:inputType="number"
+        android:gravity="center"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etage"
+        android:id="@+id/etcase"
+        android:hint="Medical Case"
+        android:textColor="#200909"
+        android:inputType="text"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnOk"
+        android:layout_below="@+id/etcase"
+        android:background="#dede3d"
+        android:text="Register Patient"
+         />
+
+</RelativeLayout>

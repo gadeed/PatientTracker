@@ -1,6 +1,6 @@
 # PatientTracker
-This applocation named PationTracker is intended  to connect doctors and patient who need to see the dector regurly or some times,
-so the doctor uses the application to send the information to the patient and track also the patient's condtion at any time 
+This applocation named Hiillo is intended  to connect Bussiness and clients who need to see the sale items regurly or some times,
+so the person uses the application to post and sale the every item they want to buy and the people seen every product they need to purchase at any time 
 
 Here is the image
 
